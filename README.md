@@ -5,6 +5,7 @@ ShenYang, LiaoNing,110819, China
 2Department of Electrical Engineering, Ningxia Institute of Science and Technology
 ShiZuiShan, NingXia,753000, China
 Corresponding author's e-mail*: zts336699@126.com
+![GDD-YOLO](images/1.png)
 # The core file description is as follows:
 We have provided the complete implementation codes of three core innovative modules of GDD-YOLO, which are the key to optimizing the accuracy and computational efficiency of small target detection.
 
@@ -63,3 +64,6 @@ Numpy=1.23.2
 
 ## Running GDD-YOLO
 After successfully installing the required third-party libraries, you can obtain the files needed for running the code from what we provide. Then, please run the latest version of the code we offer to obtain the result data. To shorten the running time, we also include a multi-process version of the code.
+
+
+![GDD-YOLO small object detection result](images/2.png)
