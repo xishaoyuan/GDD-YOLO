@@ -22,3 +22,41 @@ We have provided end-to-end model training, testing and validation scripts that 
 - train.py: Training script, supporting hyperparameter configuration (consistent with the paper: SGD optimizer, learning rate 0.01, 300 training rounds, batch size 8, momentum 0.937), capable of loading the YOLOv11-S benchmark model, integrating the three core modules, and training on the VisDrone dataset.
 - test.py: Testing script, after training, it can calculate key evaluation metrics (mean average precision mAP, precision, recall, frame rate FPS, gigaflops GFLOPs), support batch inference on the test set and output detailed performance reports, can be directly used for result comparison with mainstream algorithms.
 - val.py: Validation script, used for real-time monitoring of model performance (such as AP50 curve, loss changes), automatically validates on the VisDrone validation set after each training round, and saves the model weights with the best performance.
+## Project operating environment
+If you wish to run GDD-YOLO from source code, you will need to set up Python on your operating system.
+
+Install Python releases:
+
+• Read the beginner's guide to Python if you are new to the language: https://wiki.python.org/moin/BeginnersGuide
+
+• For Windows users, Python 3 release can be downloaded via: https://www.python.org/downloads/windows/
+
+• For Mac OS users, Python 3 release can be downloaded via: https://www.python.org/downloads/mac-osx/
+
+• GDD-YOLO only supports Python 3 onwards, Python 3.8, 3.9, 3.10 are recommended for better compatibility and performance
+
+Install Anaconda Python distribution:
+
+• Read the install instruction using the URL: https://docs.continuum.io/anaconda/install
+
+• For Windows users, a detailed step-by-step installation guide can be found via: https://docs.continuum.io/anaconda/install/windows
+
+• For Mac OS users, a detailed step-by-step installation guide can be found via: https://docs.continuum.io/anaconda/install/mac-os.html
+
+• An Anaconda Graphical installer can be found via: https://www.continuum.io/downloads
+
+• We recommend users install the latest Anaconda Python distribution
+
+Install packages:
+
+• OrchardQuant-3D uses a number of 3rd-party libraries that you may need to add to your conda environment. These include, but are not limited to:
+
+python: 3.10.14
+torch: 2.2.2+cu121
+torchvision: 0.17.2+cu121
+timm: 1.0.7
+mmcv: 2.2.0
+mmengine: 0.10.4
+Matplotlib=3.7.3
+Pandas=2.0.3
+Numpy=1.23.2
