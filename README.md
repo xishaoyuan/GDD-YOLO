@@ -60,3 +60,6 @@ mmengine: 0.10.4
 Matplotlib=3.7.3
 Pandas=2.0.3
 Numpy=1.23.2
+
+## Running GDD-YOLO
+After successfully installing the required third-party libraries, you can obtain the files needed for running the code from what we provide. Then, please run the latest version of the code we offer to obtain the result data. To shorten the running time, we also include a multi-process version of the code.
